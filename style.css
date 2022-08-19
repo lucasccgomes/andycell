@@ -2,7 +2,7 @@
 
 :root {
     --cor1: #a9ced6b4;
-    --cor2: #57cae4fa;
+    --cor2: #45676eb2;
     --cor3: #050607;
     --cor4: rgba(221, 208, 24, 0.897);
 
@@ -22,22 +22,24 @@ body{
 
 nav {
     background-color: var(--cor2);
-    padding: 10px;
+    padding: 5px;
     box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.397);
 }
 
 nav > a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     font-weight: bold;
     border-radius: 5px;
     transition-duration: .3s;
 }
 
 nav > a:hover {
-    background-color: aqua;
-    color: coral;
+    background-color: rgba(107, 114, 114, 0.39);
+    color: rgb(230, 219, 215);
+    transition: 0.3s;
+    animation: reverse;
 }
 
 .logo {
@@ -46,15 +48,16 @@ nav > a:hover {
 }
 
 .logo > img {
-    max-width: 90%;
-    height: 50%;
+    max-width: 40%;
+    height: 30%;
 }
 
 
 .pergunta {
-    
+    height: 140px;
     transform: rotate(-4deg);
-    background-color: var(--cor4);
+    background: url(img/problema.jpg);
+    background-size: contain;
     border-bottom: 7px;
     border-top: 7px;
     border-left: 0;
@@ -64,6 +67,7 @@ nav > a:hover {
 }
 
 .pergunta > h1 {
+    padding: 8px;
     text-align: center;
     font-size: 3.7em;
     color: var(--cor3);
@@ -141,21 +145,22 @@ nav > a:hover {
 
 .box {
     display: inline-block;
-    background-color: rgba(82, 76, 76, 0.37);
+    background-color: rgba(109, 184, 187, 0.253);
     border-style: solid;
     border-width: 0.2px;
-    padding: 20px 10px 10px 10px;
+    padding: 10px 0px 10px 10px;
     margin: auto;
-    width: 300px;
+    width: 330px;
     height: 100px;
-    text-align: center;
+    align-items: center;
     border-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color: rgba(71, 67, 121, 0.692);
 }
 
 .box:hover {
-    background-color: rgba(68, 68, 73, 0.315);
+    background-color: rgba(55, 55, 61, 0.315);
     animation: alternate-reverse;
+    color: #ffffff;
 }
 
 .box1 {
@@ -166,6 +171,24 @@ nav > a:hover {
     border-radius: 0px 10px 10px 0px;
 }
 
+.box > p {
+    padding: 15px 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .box1 {
+       border-radius: 10px 10px 0px 0px;
+     }
+     .box4 {
+        border-radius: 0px 0px 10px 10px;
+     }
+   }
+   
 footer {
     background-color: var(--cor2);
     padding: 5px;
