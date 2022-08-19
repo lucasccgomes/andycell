@@ -14,14 +14,14 @@
 }
 
 body{
-    background-image: linear-gradient( var(--cor1),rgb(255, 255, 255), var(--cor2));
+    background-image: linear-gradient( #a9ced6b4,rgb(255, 255, 255), #5ac6dbb2);
     min-height: 100vh;
     font-family: sans-serif;
 }
 
-
+/* Inicio Config Menu */
 nav {
-    background-color: var(--cor2);
+    background-color: #45676eb2;
     padding: 5px;
     box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.397);
 }
@@ -30,7 +30,6 @@ nav > a {
     color: white;
     text-decoration: none;
     padding: 5px;
-    font-weight: bold;
     border-radius: 5px;
     transition-duration: .3s;
 }
@@ -41,7 +40,10 @@ nav > a:hover {
     transition: 0.3s;
     animation: reverse;
 }
+/* Fim Config Menu */
 
+
+/* Inicio Config Logo */
 .logo {
     margin: auto;
     text-align: center;
@@ -51,8 +53,10 @@ nav > a:hover {
     max-width: 40%;
     height: 30%;
 }
+/* Fim Config Logo */
 
 
+/* Inicio Config Pergunta ? */
 .pergunta {
     height: 140px;
     transform: rotate(-4deg);
@@ -79,8 +83,10 @@ nav > a:hover {
     font-size: 2em;
     color: var(--cor3);
 }
+/* Fim Config Pergunta ? */
 
-/* Whats*/
+
+/* Inicio Config Contato*/
 .whatsapp {
     display: flex;
     justify-content: center;
@@ -111,7 +117,6 @@ nav > a:hover {
     background-color: #13ca22d5;
 }
 
-/* Telefone*/
 .contato {
     display: flex;
     justify-content: center;
@@ -135,22 +140,23 @@ nav > a:hover {
 .contato:hover {
     background-color: #274ea3d5;
 }
+/* Fim Config Contato */
 
+
+/* Inicio Config Serviços */
 .servicos {
-    padding: 20px;
-    text-align: center;
-    
+    padding: 20px 0px 8px 0px;
+    text-align: center; 
 }
-
 
 .box {
     display: inline-block;
     background-color: rgba(109, 184, 187, 0.253);
     border-style: solid;
     border-width: 0.2px;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 0px 0px 10px;
     margin: auto;
-    width: 330px;
+    width: 325x;
     height: 100px;
     align-items: center;
     border-color: rgb(255, 255, 255);
@@ -173,12 +179,9 @@ nav > a:hover {
 
 .box > p {
     padding: 15px 5px 5px 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 300px;
+    margin: 0px;
 }
-
 
 @media screen and (max-width: 700px) {
     .box1 {
@@ -187,12 +190,23 @@ nav > a:hover {
      .box4 {
         border-radius: 0px 0px 10px 10px;
      }
-   }
-   
+}
+/* Fim Config Serviços */
+
+
+/* Inicio Config Rodapé */
 footer {
-    background-color: var(--cor2);
+    background-color: #45676eb2;
     padding: 5px;
     color: white;
     text-align: center;
     font-size: 1em;
 }
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: #ffffff;
+}
+/* Fim Config Rodapé */
