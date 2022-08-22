@@ -57,7 +57,8 @@ nav > a:hover {
 
 
 /* Inicio Config Pergunta ? */
-.pergunta {
+
+.boxp {
     height: 140px;
     transform: rotate(-4deg);
     background: url(img/problema.jpg);
@@ -67,22 +68,33 @@ nav > a:hover {
     border-left: 0;
     border-right: 0;
     border-color: #050607;
-    margin-bottom: 55px;
+    margin-bottom: 33px;
 }
 
-.pergunta > h1 {
-    padding: 8px;
-    text-align: center;
-    font-size: 3.7em;
-    color: var(--cor3);
-    text-shadow: 10px 10px 10px 5px black;
+@media screen and (min-width: 1080px) {
+    .pergunta {
+        padding-top: 14px;
+    }
 }
 
-.pergunta > p {
+.boxp > .pergunta {
     text-align: center;
-    font-size: 2em;
+    font-size: calc(1.2em + 2.6vw);
     color: var(--cor3);
 }
+
+.boxp > .resposta {
+    text-align: center;
+    font-size: calc(1em + 1.6vw);
+    color: var(--cor3);
+}
+
+@media screen and (max-width: 725px) {
+    .pergunta {
+        padding-top: 33px;
+    }
+}
+
 /* Fim Config Pergunta ? */
 
 
