@@ -50,31 +50,24 @@ nav > a:hover {
 }
 
 .logo > img {
-    max-width: 40%;
-    height: 30%;
+    max-width: 100%;
+    
 }
 /* Fim Config Logo */
 
 
 /* Inicio Config Pergunta ? */
-
 .boxp {
-    height: 140px;
+    max-height: 140px;
+    min-height: 50px;
     transform: rotate(-4deg);
-    background: url(img/problema.jpg);
-    background-size: contain;
-    border-bottom: 7px;
-    border-top: 7px;
-    border-left: 0;
-    border-right: 0;
-    border-color: #050607;
+    background: yellow;
+    border: 33px solid rgba(0, 0, 0, 0);
     margin-bottom: 33px;
-}
-
-@media screen and (min-width: 1080px) {
-    .pergunta {
-        padding-top: 14px;
-    }
+    border-left: 0px;
+    border-right: 0px;
+    border-image: url(img/borda.png);
+    border-image-slice: 28;    
 }
 
 .boxp > .pergunta {
@@ -88,13 +81,6 @@ nav > a:hover {
     font-size: calc(1em + 1.6vw);
     color: var(--cor3);
 }
-
-@media screen and (max-width: 725px) {
-    .pergunta {
-        padding-top: 33px;
-    }
-}
-
 /* Fim Config Pergunta ? */
 
 
@@ -173,6 +159,7 @@ nav > a:hover {
     align-items: center;
     border-color: rgb(255, 255, 255);
     color: rgba(71, 67, 121, 0.692);
+    font-size: .4;
 }
 
 .box:hover {
