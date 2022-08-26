@@ -1,12 +1,17 @@
 @charset "UTF8";
 
-:root {
-    --cor1: #a9ced6b4;
-    --cor2: #45676eb2;
-    --cor3: #050607;
-    --cor4: rgba(221, 208, 24, 0.897);
-
+@font-face{
+    font-family: 'Aldo';
+    src: url('Fonte/aldo_the_apache/AldotheApache.ttf') format('opentype');
+    font-weight: normal;
 }
+
+@font-face{
+    font-family: 'Bebas';
+    src: url('Fonte/bebas_neue/BebasNeue-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+
 
 * {
     margin: 0px;
@@ -58,6 +63,7 @@ nav > a:hover {
 
 /* Inicio Config Pergunta ? */
 .boxp {
+    font-family: aldo;
     max-height: 140px;
     min-height: 50px;
     transform: rotate(-4deg);
@@ -73,13 +79,11 @@ nav > a:hover {
 .boxp > .pergunta {
     text-align: center;
     font-size: calc(1.2em + 2.6vw);
-    color: var(--cor3);
 }
 
 .boxp > .resposta {
     text-align: center;
     font-size: calc(1em + 1.6vw);
-    color: var(--cor3);
 }
 /* Fim Config Pergunta ? */
 
@@ -92,12 +96,13 @@ nav > a:hover {
     margin: auto;
     width: 375px;
     padding: 7px;
+    margin-bottom: 15px;
     background-color:#34af23;
     border-color: rgb(167, 160, 160);
     border-radius: 10px;
     border-style: solid;
     border-width: 3px;
-    box-shadow: 4px 5px 6px 2px rgba(0, 0, 0, 0.315);
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.301);
 }
 
 .whatsapp > a {
@@ -113,6 +118,7 @@ nav > a:hover {
 
 .whatsapp:hover {
     background-color: #13ca22d5;
+    box-shadow: 0px 0px 8px 5px #13ca225d;
 }
 
 .contato {
@@ -122,11 +128,12 @@ nav > a:hover {
     background-color: rgb(78, 111, 218);
     width: 375px;
     margin: auto;
+    margin-bottom: 20px;
     padding: 7px;
     border-radius: 10px 10px;
     border-style: solid;
     border-color: rgb(167, 160, 160);
-    box-shadow: 6px 5px 10px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.301);
 }
 
 .contato > p {
@@ -137,6 +144,7 @@ nav > a:hover {
 
 .contato:hover {
     background-color: #274ea3d5;
+    box-shadow: 0px 0px 8px 5px #274ea375;
 }
 /* Fim Config Contato */
 
@@ -148,10 +156,12 @@ nav > a:hover {
 }
 
 .box {
+    font-family: bebas;
     display: inline-block;
     background-color: rgba(109, 184, 187, 0.253);
     border-style: solid;
-    border-width: 0.2px;
+    border-width: 0;
+    box-shadow: -9px -9px 20px 20px rgb(109 184 187 / 25%);
     padding: 10px 0px 0px 10px;
     margin: auto;
     width: 325x;
@@ -164,8 +174,8 @@ nav > a:hover {
 
 .box:hover {
     background-color: rgba(55, 55, 61, 0.315);
-    animation: alternate-reverse;
     color: #ffffff;
+    box-shadow: -9px -9px 20px 20px  rgba(55, 55, 61, 0.315);
 }
 
 .box1 {
